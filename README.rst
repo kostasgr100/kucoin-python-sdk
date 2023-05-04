@@ -38,7 +38,7 @@ or `Generate an API Key in Sandbox <https://sandbox.kucoin.com/account/api>`_ an
 .. code:: python
 
     #  MarketData
-    from kucoin.client import Market
+    from my_kucoin.client import Market
     client = Market(url='https://api.kucoin.com')
     # client = Market()
 
