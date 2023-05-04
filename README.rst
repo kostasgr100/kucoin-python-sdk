@@ -57,7 +57,7 @@ or `Generate an API Key in Sandbox <https://sandbox.kucoin.com/account/api>`_ an
     api_passphrase = '<api_passphrase>'
 
     # Trade
-    from kucoin.client import Trade
+    from my_kucoin.client import Trade
     client = Trade(key='', secret='', passphrase='', is_sandbox=False, url='')
 
     # or connect to Sandbox
@@ -73,7 +73,7 @@ or `Generate an API Key in Sandbox <https://sandbox.kucoin.com/account/api>`_ an
     client.cancel_order('5bd6e9286d99522a52e458de')
 
     # User
-    from kucoin.client import User
+    from my_kucoin.client import User
     client = User(api_key, api_secret, api_passphrase)
 
     # or connect to Sandbox
@@ -87,8 +87,8 @@ Websockets
 .. code:: python
 
     import asyncio
-    from kucoin.client import WsToken
-    from kucoin.ws_client import KucoinWsClient
+    from my_kucoin.client import WsToken
+    from my_kucoin.ws_client import KucoinWsClient
 
 
     async def main():
